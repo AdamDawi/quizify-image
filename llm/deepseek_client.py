@@ -3,7 +3,7 @@ from ollama import ChatResponse
 import re
 
 def ask_deepseek(input_content, system_prompt, deep_think = True, print_log = True):
-    print("Loading...")
+    print("START: Cleaning and formatting Deepseek response")
     response: ChatResponse = chat(model='deepseek-r1:14b', messages=[
         {'role' : 'system', 'content' : system_prompt},
         {'role': 'user','content': input_content}
