@@ -174,3 +174,5 @@ cython_debug/
 .pypirc
 
 data/images/
+output/deep_think_logs.txt
+output/formatted_questions.json
