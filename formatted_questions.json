@@ -1,0 +1,48 @@
+[
+  {
+    "question": "Zdalnego wywołania procedur",
+    "answers": [
+      {
+        "text": "o RMi (A)",
+        "correct": false
+      },
+      {
+        "text": "b. Ustug WebService (B)",
+        "correct": false
+      },
+      {
+        "text": "c. Architektury SOA (C)",
+        "correct": true
+      },
+      {
+        "text": "d. Transferwu danych (D)",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Co jest czechą magistrálus ustug?",
+    "answers": [
+      {
+        "text": "Umożliwia rejestrowanie i wyszukiwanie usługi",
+        "correct": false
+      },
+      {
+        "text": "Magistrala ustug nie uemożliwi użupelniania braków wiadomości",
+        "correct": false
+      },
+      {
+        "text": "Jest to siećga swiatłowodowa - umożliwiająca za sytuacją zmiany danych pomiarowych usługi",
+        "correct": false
+      },
+      {
+        "text": "Zapewnienia routing wiadomości od klienta do usługi",
+        "correct": false
+      },
+      {
+        "text": "Jest systemem produkcyjnym ustug w podstawie zdefiniowanych interfejsów ustug",
+        "correct": false
+      }
+    ]
+  }
+]
