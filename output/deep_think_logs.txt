@@ -1,0 +1,49 @@
+
+================================================================================
+🖼️ Image: data/test_images/i1.jpg
+🕒 Timestamp: 2025-04-13T21:32:19.361916
+
+📜 Extracted OCR text:
+8 LTE+ Lt ull 82%
+10.07 0L
+25 odle3.cs.pollub.pl
+2
+F Oflaguj pytanie
+czym jest kontroler w usłudze sieciowej typu REST?
+a Jest "czuciem" komponentów widoku zapewnia reakcje na działania użytkownika
+b. Izoluje usługę od innych usług
+C Reprezentuje dane jednego wiersza Z tabeli bazy danych
+d. Zajmuje się obsługą zdarzeń GUI
+e Mapuje żądania przychodzące od klientów usługi na wywołania metod usługi
+Następna strona
+Nawigacja w tescie
+
+🧠 Deep Think response:
+Alright, let's tackle this problem step by step. The user has provided a block of text that appears to be the result of an OCR scan on a Polish quiz. My task is to transform this messy text into a clean JSON array of multiple-choice questions.
+
+First, I'll examine the input text carefully. It starts with some metadata: "8 LTE+ Lt ull 82%", which seems like technical or network information and can be ignored as per the guidelines. The date "10.07 0L" might also be irrelevant, so I'll skip that.
+
+Next, there's a URL "25 odle3.cs.pollub.pl". According to rule 2, any metadata or URLs should be ignored, so I won't include this in my JSON output.
+
+The main content begins with "F Oflaguj pytanie", which translates to "Flag question" or "Mark the question". This is likely indicating that this is a question to be considered. The actual question is: "czym jest kontroler w usłudze sieciowej typu REST?" which means "What is a controller in a RESTful service?"
+
+Following the question, there are several answer options labeled a), b), c), d), and e). Each option has some text, but I notice that the Polish OCR might have introduced some issues. For example, the first option is written as "a Jest 'czuciem'..." which seems like it should be "jest czuciem" without the apostrophes around "czuciem". Similarly, other options may have formatting inconsistencies.
+
+I'll proceed to format each answer correctly, ensuring that each has a "text" field and a "correct" boolean. Since the task is to create multiple-choice questions where only one answer is correct, I need to determine which option is the correct one.
+
+Looking at the answer options:
+
+a) Jest "czuciem" komponentów widoku zapewnia reakcje na działania użytkownika
+b. Izoluje usługę od innych usług
+C Reprezentuje dane jednego wiersza Z tabeli bazy danych
+d. Zajmuje się obsługą zdarzeń GUI
+e. Mapuje żądania przychodzące od klientów usługi na wywołania metod usługi
+
+From my knowledge of RESTful services, a controller typically handles incoming requests and maps them to service methods. Therefore, option e) seems correct.
+
+I'll structure the JSON accordingly, ensuring that each answer has its "correct" field set to true only for option e). The other answers will have "correct": false.
+
+Additionally, I need to make sure that all formatting errors are fixed, such as extra spaces and incorrect characters. For example, option C is capitalized and has a period, which might be a typo; it should probably be lowercase without the period.
+
+Finally, I'll compile all this into a JSON array with one object containing the question and its answers, ensuring strict adherence to the specified format.
+================================================================================
