@@ -49,3 +49,50 @@ def process_image_to_json(image_path, output_file, system_prompt, log_file):
     
     print(f"Processing complete for image: {image_path}")
     print(f"Total processing time: {minutes} minute(s) {seconds} second(s)")
+
+def process_text_to_json(text_path, output_file, system_prompt, log_file):
+    start_time = time.time()  # Start timer
+
+    print(f"\nSTART: Reading text file: {text_path}")
+
+    # Read text from file
+    with open(text_path, 'r', encoding='utf-8') as f:
+        input_text = f.read()
+    print("DONE: Reading text file")
+
+    # Ask Deepseek to process the text
+    clean_response, deep_think_response = ask_deepseek(
+        input_content=input_text,
+        system_prompt=system_prompt,
+        deep_think=True,
+        print_log=False
+    )
+    print("DONE: Cleaning and formatting Deepseek response")
+
+    # Append to log
+    append_to_log(text_path, input_text, deep_think_response, log_file, result=clean_response)
+
+    # Clean and parse the response
+    clean_response = clean_response.replace('```json', '').replace('```', '').strip()
+    try:
+        parsed_json = json.loads(clean_response)
+        print("JSON parsed successfully.")
+    except json.JSONDecodeError as e:
+        print(f"JSON parse error: {e}")
+        parsed_json = [{"title": f"Failed to process: {text_path}"}]
+
+    # Load existing data, extend it, and save it
+    existing_data = load_existing_json(output_file)
+    existing_data.extend(parsed_json)
+    save_json(existing_data, output_file)
+
+    # End timer and calculate the total time taken
+    end_time = time.time()  # End timer
+    elapsed_time = end_time - start_time  # Calculate elapsed time
+
+    # Calculate minutes and seconds
+    minutes = int(elapsed_time // 60)
+    seconds = int(elapsed_time % 60)
+
+    print(f"Processing complete for text file: {text_path}")
+    print(f"Total processing time: {minutes} minute(s) {seconds} second(s)")

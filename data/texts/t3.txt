@@ -1,0 +1,160 @@
+---
+
+**8) Ustawienie targetSdk w pliku build.gradle oznacza:**
+a) minimalną wersję Androida (API Level) wymaganą przez aplikację
+b) SDK wykorzystywane do skompilowania projektu
+**c) wersję Androida (API Level), której uwzględnia aplikacja**
+d) SDK, do którego autor dostosuje aplikację w przyszłości
+
+---
+
+**9) W aplikacji korzystającej z Room klasa repozytorium:**
+a) reprezentuje bazę danych
+**b) łączy dane z wielu źródeł**
+c) opisuje pola rekordów
+d) mapuje zapytania SQL na metody
+
+---
+
+**10) W Firebase za dostęp do bazy danych (np. Firestore) odpowiada klasa:**
+**a) FirebaseFirestore** (dla Firestore) lub `FirebaseDatabase` (dla Realtime Database)
+b) Firebase
+c) Firestore
+d) FirebaseCloudDb
+
+---
+
+**11) Ustawienia współdzielone (SharedPreferences):**
+a) umożliwiają przechowywanie ustawień współnych dla wszystkich aplikacji
+b) wymagają zapisywania i odczytywania danych w określonej kolejności
+**c) umożliwiają przechowywanie ustawień współnych dla wszystkich elementów aplikacji**
+d) umożliwiają tylko przechowywanie tekstów
+
+---
+
+**12) Atrybut, którego postaci nie występują w standardowych layoutach (jako powszechna forma dla standardowych komponentów Androida):**
+a) android:własność="wartość"
+b) tools:właściwość="wartość"
+c) app:właściwość="wartość"
+**d) właściwość="wartość"** (bez przestrzeni nazw, mniej standardowe dla wbudowanych komponentów)
+
+---
+
+**13) Do wykonywania zadań w tle w systemie Android nie można wykorzystać:**
+**a) pochodnej klasy BackgroundTask**
+b) standardowych wątków Java
+c) klasy HandlerThread
+d) pochodnej klasy Service
+
+---
+
+**14) Z czego składa się Android Debug Bridge?**
+a) polecenia adb
+**b) klienta (polecenie adb na komputerze), serwera (na komputerze) i demona (na urządzeniu z Androidem)**
+c) klienta (polecenie adb na komputerze) i serwera (na urządzeniu z Androidem)
+d) klienta (polecenie adb na komputerze) i demona (na komputerze)
+
+---
+
+**15) Do obsługi rozgłoszeń nie jest konieczne:**
+a) zarejestrowanie odbiorcy
+b) użycie klasy BroadcastReceiver
+**c) uruchomienie wątku klasy HandlerThread**
+d) użycie metod onCreate(), onReceive() (Uwaga: `onCreate()` nie jest metodą cyklu życia `BroadcastReceiver`)
+
+---
+
+**16) Klasy rozmiaru okna, które należy uwzględnić tworząc aplikację dla Androida to:**
+a) telefon / tablet / TV
+b) watch / phone / tablet
+c) portrait / landscape
+**d) kompaktowa / średnia / rozszerzona**
+
+---
+
+**17) W systemie Android można wyróżnić następujące warstwy:**
+**a) kernel / biblioteki / framework aplikacji / aplikacje**
+b) core os / core services / warstwy multimediów / cocoa touch
+c) core system / mobile core / phone shell
+d) kernel / biblioteki / framework aplikacji / app launcher
+
+---
+
+**18) W bibliotece Retrofit w klasie Call metoda enqueue():**
+a) wykonuje zadanie natychmiast w głównym wątku aplikacji
+**b) asynchronicznie wykonuje zadanie w dodatkowym wątku**
+c) kolejkuje zadanie do wykonania w głównym wątku aplikacji
+d) asynchronicznie wykonuje zadanie w głównym wątku
+
+---
+
+**19) Jednostka specjalnie przewidziana do określania rozmiaru tekstu jest:**
+a) mm
+b) px
+c) dp
+**d) sp**
+
+---
+
+**20) We współczesnych wersjach Androida:**
+a) można używać tylko połączeń https
+b) można używać połączeń http i https bez dodatkowych czynności
+c) można używać połączeń https pod warunkiem dodania certyfikatu serwera do manifestu aplikacji
+**d) można używać połączeń https, jak również http (pod warunkiem określenia wyjątku w pliku security_config.xml)**
+
+---
+
+**Pytanie (zestaw 4, ponumerowane jako 12) Na określenie rozmieszczenia elementów względem innych pozwala:**
+a) LinearLayout
+**b) ConstraintLayout**
+c) TableLayout
+d) FrameLayout
+
+---
+
+**Pytanie (zestaw 4, ponumerowane jako 13) Połączenie sieciowe standardowego emulatora Androida jest zrealizowane następująco:**
+a) każdy działający emulator jest podłączony do jego własnego wirtualnego routera
+b) emulator jest widoczny w sieci jako osobne urządzenie w sieci
+**c) wszystkie działające emulatory połączone są do wspólnego wirtualnego routera**
+d) emulator jest dostępny pod adresem komputera
+
+---
+
+**Pytanie (zestaw 4, ponumerowane jako 14) W bibliotece Retrofit klasa Retrofit:**
+a) nie korzysta ze wzorca budowniczego
+b) nie umożliwia ustawienie adresu usługi
+c) nie umożliwia ustawienie konwertera danych
+**d) nie realizuje samodzielnie wzorca singleton**
+
+---
+
+**Pytanie (zestaw 4, ponumerowane jako 15) Które ze stwierdzeń dotyczących aktywności nie jest prawdziwe?**
+a) stan aktywności można zachować/odtworzyć za pomocą metod onSaveInstanceState() / onRestoreInstanceState()
+b) stan aktywności można zachować/odtworzyć za pomocą metod onSaveInstanceState() / onCreate()
+c) standardowo aktywności są niszczone i tworzone na nowo przy zmianie konfiguracji
+**d) stan aktywności zachowywany jest automatycznie bez ingerencji programisty**
+
+---
+
+**Pytanie (zestaw 4, ponumerowane jako 16) Firebase Firestore to:**
+a) relacyjna baza danych działająca w chmurze
+b) relacyjna baza danych działająca na urządzeniu mobilnym
+**c) dokumentowa baza danych działająca w chmurze**
+d) dokumentowa baza danych działająca na urządzeniu mobilnym
+
+---
+
+**Pytanie (zestaw 4, ponumerowane jako 17) Które stwierdzenie na temat ustawień współdzielonych nie jest prawdziwe?**
+**a) możliwe jest ustawienie wartości domyślnych ustawień zawsze uwzględnianych w kodzie Java/Kotlin**
+b) możliwe jest reagowanie na zmianę konkretnego ustawienia
+c) możliwe jest reagowanie na zmianę wszystkich ustawień
+d) możliwe jest tworzenie zależności między ustawieniami
+
+---
+
+**Pytanie (zestaw 4, ponumerowane jako 18) Klasa Handler:**
+a) może służyć do tworzenia grup wątków
+b) może służyć do tworzenia pojedynczych wątków
+**c) może służyć do okresowego wykonywania krótkich zadań**
+d) umożliwia tylko dodawanie zadań do kolejki w celu jak najszybszego wykonania
+
