@@ -9,7 +9,9 @@ from PyQt5.QtWidgets import (
 )
 from PyQt5.QtCore import QThread, pyqtSignal
 from config import system_prompt_image_to_json, system_prompt_text_to_json
-from processing.formatter import format_elapsed, process_image_to_json, process_text_to_json
+from processing.formatter import (
+    format_elapsed, process_file_to_text, process_text_to_json
+)
 
 class Worker(QThread):
     progress = pyqtSignal(str)
@@ -31,15 +33,13 @@ class Worker(QThread):
                 for i, filename in enumerate(files, 1):
                     file_path = os.path.join(self.images_folder, filename)
                     self.progress.emit(f"START: Processing image {i}/{len(files)}: {filename}")
-                    file_start = time.time()
-                    status, elapsed = self.process_image_with_status(file_path)
-                    self.progress.emit(f"{status} ({elapsed:.2f}s)\n")
+                    status, elapsed = self.process_file_with_status(file_path, "image")
+                    self.progress.emit(f"{os.path.basename(file_path)}: {status} ({format_elapsed(elapsed)})\n")
             elif self.mode == "text":
                 files = [f for f in os.listdir(self.texts_folder) if f.lower().endswith('.txt')]
                 for i, filename in enumerate(files, 1):
                     file_path = os.path.join(self.texts_folder, filename)
-                    file_start = time.time()
-                    status, elapsed = self.process_text_with_status(file_path)
+                    status, elapsed = self.process_file_with_status(file_path, "text")
                     self.progress.emit(f"{os.path.basename(file_path)}: {status} ({format_elapsed(elapsed)})\n")
             else:
                 self.finished.emit("Invalid MODE selected. Use 'image' or 'text'.")
@@ -52,32 +52,20 @@ class Worker(QThread):
         except Exception as e:
             self.finished.emit(f"Error: {str(e)}")
 
-    def process_image_with_status(self, image_path):
-        from processing.formatter import process_image_to_json
+    def process_file_with_status(self, file_path, mode):
         file_start = time.time()
         try:
-            self.progress.emit("START: Extracting text from image...")
-            status = process_image_to_json(
-                image_path, self.output_file, system_prompt_image_to_json, self.log_file, self.progress
+            input_text = process_file_to_text(file_path, mode, self.progress)
+            status, elapsed = process_text_to_json(
+                input_text, file_path, self.output_file,
+                system_prompt_image_to_json if mode == "image" else system_prompt_text_to_json,
+                self.log_file, self.progress
             )
             elapsed = time.time() - file_start
-            return (f"{os.path.basename(image_path)}: {status}", elapsed)
+            return status, elapsed
         except Exception as e:
             elapsed = time.time() - file_start
-            return (f"{os.path.basename(image_path)}: Failed ({str(e)})", elapsed)
-
-    def process_text_with_status(self, text_path):
-        from processing.formatter import process_text_to_json
-        file_start = time.time()
-        try:
-            status = process_text_to_json(
-                text_path, self.output_file, system_prompt_text_to_json, self.log_file, self.progress
-            )
-            elapsed = time.time() - file_start
-            return (f"{os.path.basename(text_path)}: {status}", elapsed)
-        except Exception as e:
-            elapsed = time.time() - file_start
-            return (f"{os.path.basename(text_path)}: Failed ({str(e)})", elapsed)
+            return f"Failed ({str(e)})", elapsed
 
 class QuizProcessorGUI(QWidget):
     def __init__(self):
