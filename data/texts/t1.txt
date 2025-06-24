@@ -1,0 +1,54 @@
+1. W skład stosu MERN wchodzą nastepujace technologie: 
+a. Biblioteka REACT 
+b. Baza danych typu NoSQL 
+c. Szkielet frontendowy Express 
+d. Platforma Microsoft 
+2. Wskaz nieprawdziwe stwierdzenie opisujące platformę Node: 
+a. Powstala w celu ułatwienia programowania asynchronicznego 
+b. Jest środowiskiem wieloplatformowym 
+c. Możliwe jest używanie synchronicznych wersji funkcji 
+d. Jest domyślnie wielowątkowy 
+3. Wskaz sformułowanie nieprawidłowe. Plik package.json 
+a. Można utworzyć „recznie” 
+b. Można utworzyć za pomocą npm init 
+c. Jest narzędziem do automatycznego restartowania programu po 
+wprowadzeniu zmian w kodzie 
+d. Zawiera informacje o projekcie: wersja, opis, autorzy itd. Oraz o 
+zależnościach jakie zostały wykorzystane do stworzenia projektu 
+4. Wskaż niepoprawne stwierdzenie:  
+a. async i await wspomagają wykonywanie operacji asynchronicznych  
+b. async i await można dodawać do stałych i zmiennych  
+c. async informuje JavaScript, że funkcja korzysta z obietnic  
+d. await jest używane podczas wywołaniu funkcji  
+5. Wskaż wynik działania kodu: [1, 2, 3].map(x = > x*x*x)  
+a. [1, 4, 6]  
+b. [1, 4, 9]  
+c. [3, 6, 9]  
+d. [1, 8, 27]  
+6. Która z poniższych metod żąda od serwera zaakceptowania danych zawartych w 
+żądaniu modyfikacji istniejącego obiektu identyfikowanego przez URI?  
+a. GET 
+b. DELETE  
+c. POST 
+d. PUT 
+7. Silniki szablonów, które można użyć w szkielecie Express:  
+a. EJS 
+b. Pug 
+c. Handlebars 
+d. d. żaden z powyższych  
+8. Które sformułowania odnośnie bazy danych MongoDB są nieprawdziwe:  
+a. MongoDB to baza nierelacyjna 
+b. MongoDB przechowuje dane w rekoradach I tabelach 
+c.dokumenty w kolekcji nie posiadaja unikalnych indentyfikatorow 
+d. językiem MongoDB jest JavaScript  
+9. Jaka liczba elementów może być zwrócona przez prawidłowy komponent 
+Reacta:  
+a. 1  
+b. 2  
+c. 3  
+d. 5  
+10. Co należy użyć, aby przekazać dane z zewnątrz do komponentu?  
+1. setState  
+2. funkcji render z argumentami  
+3. props  
+4. BrowserRouter  

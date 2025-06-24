@@ -1,0 +1,863 @@
+[
+  {
+    "question": "W skład stosu MERN wchodzą nastepujace technologie:",
+    "answers": [
+      {
+        "text": "a. Biblioteka REACT",
+        "correct": false
+      },
+      {
+        "text": "b. Baza danych typu NoSQL",
+        "correct": false
+      },
+      {
+        "text": "c. Szkielet frontendowy Express",
+        "correct": false
+      },
+      {
+        "text": "d. Platforma Microsoft",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaz nieprawdziwe stwierdzenie opisujące platformę Node:",
+    "answers": [
+      {
+        "text": "a. Powstala w celu ułatwienia programowania asynchronicznego",
+        "correct": false
+      },
+      {
+        "text": "b. Jest środowiskiem wieloplatformowym",
+        "correct": false
+      },
+      {
+        "text": "c. Możliwe jest używanie synchronicznych wersji funkcji",
+        "correct": false
+      },
+      {
+        "text": "d. Jest domyślnie wielowątkowy",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaz sformułowanie nieprawidłowe. Plik package.json",
+    "answers": [
+      {
+        "text": "a. Można utworzyć „recznie”",
+        "correct": false
+      },
+      {
+        "text": "b. Można utworzyć za pomocą npm init",
+        "correct": false
+      },
+      {
+        "text": "c. Jest narzędziem do automatycznego restartowania programu po wprowadzeniu zmian w kodzie",
+        "correct": false
+      },
+      {
+        "text": "d. Zawiera informacje o projekcie: wersja, opis, autorzy itd. Oraz o zależnościach jakie zostały wykorzystane do stworzenia projektu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaż niepoprawne stwierdzenie:",
+    "answers": [
+      {
+        "text": "a. async i await wspomagają wykonywanie operacji asynchronicznych",
+        "correct": false
+      },
+      {
+        "text": "b. async i await można dodawać do stałych i zmiennych",
+        "correct": false
+      },
+      {
+        "text": "c. async informuje JavaScript, że funkcja korzysta z obietnic",
+        "correct": false
+      },
+      {
+        "text": "d. await jest używane podczas wywołaniu funkcji",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaż wynik działania kodu: [1, 2, 3].map(x = > x*x*x)",
+    "answers": [
+      {
+        "text": "a. [1, 4, 6]",
+        "correct": false
+      },
+      {
+        "text": "b. [1, 4, 9]",
+        "correct": false
+      },
+      {
+        "text": "c. [3, 6, 9]",
+        "correct": false
+      },
+      {
+        "text": "d. [1, 8, 27]",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Która z poniższych metod żąda od serwera zaakceptowania danych zawartych w żądaniu modyfikacji istniejącego obiektu identyfikowanego przez URI?",
+    "answers": [
+      {
+        "text": "a. GET",
+        "correct": false
+      },
+      {
+        "text": "b. DELETE",
+        "correct": false
+      },
+      {
+        "text": "c. POST",
+        "correct": false
+      },
+      {
+        "text": "d. PUT",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Silniki szablonów, które można użyć w szkielecie Express:",
+    "answers": [
+      {
+        "text": "a. EJS",
+        "correct": false
+      },
+      {
+        "text": "b. Pug",
+        "correct": false
+      },
+      {
+        "text": "c. Handlebars",
+        "correct": false
+      },
+      {
+        "text": "d. d. żaden z powyższych",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Które sformułowania odnośnie bazy danych MongoDB są nieprawdziwe:",
+    "answers": [
+      {
+        "text": "a. MongoDB to baza nierelacyjna",
+        "correct": false
+      },
+      {
+        "text": "b. MongoDB przechowuje dane w rekoradach I tabelach",
+        "correct": false
+      },
+      {
+        "text": "c.dokumenty w kolekcji nie posiadaja unikalnych indentyfikatorow",
+        "correct": false
+      },
+      {
+        "text": "d. językiem MongoDB jest JavaScript",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Jaka liczba elementoów może być zwrotną przez prawidłowy komponent Reacta:",
+    "answers": [
+      {
+        "text": "a. 1",
+        "correct": false
+      },
+      {
+        "text": "b. 2",
+        "correct": false
+      },
+      {
+        "text": "c. 3",
+        "correct": false
+      },
+      {
+        "text": "d. 5",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Co należy użyć, aby przekazać dane z zewnątrz do komponentu?",
+    "answers": [
+      {
+        "text": "1. setState",
+        "correct": false
+      },
+      {
+        "text": "2. funkcji render z argumentami",
+        "correct": false
+      },
+      {
+        "text": "3. props",
+        "correct": false
+      },
+      {
+        "text": "4. BrowserRouter",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Punktem wejścia do aplikacji React jest:",
+    "answers": [
+      {
+        "text": "a. index.js",
+        "correct": false
+      },
+      {
+        "text": "b. App.js",
+        "correct": false
+      },
+      {
+        "text": "c. registerServiceWorker.js",
+        "correct": false
+      },
+      {
+        "text": "d. main.js",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Tak zwane hooki w React:",
+    "answers": [
+      {
+        "text": "a. występują w komponentach klasowych",
+        "correct": false
+      },
+      {
+        "text": "b. musza byc wywolywane na najwyzszym poziomie, nie mozna ich wywolac wewnatrz zagniezdzonych funkcji, petli, warunkow",
+        "correct": false
+      },
+      {
+        "text": "c. wymagają deklaracji konstruktora",
+        "correct": false
+      },
+      {
+        "text": "d. wymagają użycia słowa kluczowego this w deklaracji lub modyfikacji stanu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Jakie są rodzaje komponentów w React:",
+    "answers": [
+      {
+        "text": "1. Stanowe",
+        "correct": false
+      },
+      {
+        "text": "2. Bezstanowe",
+        "correct": false
+      },
+      {
+        "text": "3. Klasowe",
+        "correct": false
+      },
+      {
+        "text": "4. funkcjonalne",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaż, kto z poniższych to szablon ciągu tekstowego:",
+    "answers": [
+      {
+        "text": "1. {Połowa liczby 20 wynosi ${20 / 2}}",
+        "correct": false
+      },
+      {
+        "text": "2. 'Połowa liczby 20 wynosi ${20 / 2}'",
+        "correct": false
+      },
+      {
+        "text": "3. \"Połowa liczby 20 wynosi ${20 / 2}\"",
+        "correct": false
+      },
+      {
+        "text": "4. `Połowa liczby 20 wynosi ${20 / 2}`",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Oprogramowanie pośredniczące w Express realizuje następujące zadania:",
+    "answers": [
+      {
+        "text": "1. może wywoływać kolejne funkcje oprogramowania pośredniczącego",
+        "correct": false
+      },
+      {
+        "text": "2. może dokonywać zmian w obiektach żądania i odpowiedzi",
+        "correct": false
+      },
+      {
+        "text": "3. może koniec cykl żądanie-odpowiedz",
+        "correct": false
+      },
+      {
+        "text": "4. przekształca kod JavaScript korzystający z najnowszych możliwości języka na kod, kto jest wykonywany w starszych przeglądarkach",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaż wynik działania kodu: [2, 3, 4].map(x => x * 2)",
+    "answers": [
+      {
+        "text": "1. [4, 9, 16]",
+        "correct": false
+      },
+      {
+        "text": "2. 24",
+        "correct": false
+      },
+      {
+        "text": "3. 18",
+        "correct": false
+      },
+      {
+        "text": "4. [4, 6, 8]",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "W skład stosu MERN wchodzą następujące technologie:",
+    "answers": [
+      {
+        "text": "1. MySQL, Elixir, Router, Node",
+        "correct": false
+      },
+      {
+        "text": "2. MsSQL, Electron, Ruby on Rails, Node",
+        "correct": false
+      },
+      {
+        "text": "3. Microsoft SQL, Exit, Redux, Node",
+        "correct": false
+      },
+      {
+        "text": "4. MongoDB, Express, React, Node",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Kto z poniższych fragmentów kodu zapisanych w JSX są prawidłowe?",
+    "answers": [
+      {
+        "text": "1. return (<div>Pierwszy element</div><div>Drugi element</div>)",
+        "correct": false
+      },
+      {
+        "text": "2. return (<div><div>Pierwszy element</div><div>Drugi element</div></div>)",
+        "correct": false
+      },
+      {
+        "text": "3. return ( <table> <tr><td></td><td></td><td></td></tr> <tr><td></td><td></td><td></td></tr> <tr><td></td><td></td><td></td></tr> </table>)",
+        "correct": false
+      },
+      {
+        "text": "4. return (<button class=”btn btn-warning”>Naciśnij</button>)",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Kto sformułowania odnośnie MongoDB są nieprawdziwe?",
+    "answers": [
+      {
+        "text": "1. MongoDB to nierelacyjna baza danych",
+        "correct": false
+      },
+      {
+        "text": "2. Językiem MongoDB jest JavaScript",
+        "correct": false
+      },
+      {
+        "text": "3. MongoDB przechowuje dane w dokumentach i kolekcjach",
+        "correct": false
+      },
+      {
+        "text": "4. Dokumenty w kolekcji nie posiadają unikalnych identyfikatorów",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaż prawidłowe stwierdzenia dotyczące formatu JSON:",
+    "answers": [
+      {
+        "text": "1. Odpowiedź w formacie JSON ma znacznie większą liczbę znaków niż XML i w związku z tym powoduje większy ruch sieciowy i dłuższy czas transferu danych",
+        "correct": false
+      },
+      {
+        "text": "2. Lekki, tekstowy, przyjazny format dla języka JavaScript",
+        "correct": false
+      },
+      {
+        "text": "3. Obsługuje typy strukturalne object i array",
+        "correct": false
+      },
+      {
+        "text": "4. Nie sprawdza się w opisie i serializacji danych strukturalnych",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Punktem wejścia do aplikacji React jest:",
+    "answers": [
+      {
+        "text": "a. index.js",
+        "correct": false
+      },
+      {
+        "text": "b. App.js",
+        "correct": false
+      },
+      {
+        "text": "c. registerServiceWorker.js",
+        "correct": false
+      },
+      {
+        "text": "d. main.js",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Tak zwane hooki w React:",
+    "answers": [
+      {
+        "text": "a. występują w komponentach klasowych",
+        "correct": false
+      },
+      {
+        "text": "b. musza byc wywolywane na najwyzszym poziomie, nie mozna ich wywolac wewnatrz zagniezdzonych funkcji, petli, warunkow",
+        "correct": false
+      },
+      {
+        "text": "c. wymagają deklaracji konstruktora",
+        "correct": false
+      },
+      {
+        "text": "d. wymagają użycia słowa kluczowego this w deklaracji lub modyfikacji stanu",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Jakie są rodzaje komponentów w React:",
+    "answers": [
+      {
+        "text": "1. Stanowe",
+        "correct": false
+      },
+      {
+        "text": "2. Bezstanowe",
+        "correct": false
+      },
+      {
+        "text": "3. Klasowe",
+        "correct": false
+      },
+      {
+        "text": "4. funkcjonalne",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaż, ktozyr, z poniższych to szablon ciągu tekstowego:",
+    "answers": [
+      {
+        "text": "1. {Połowa liczby 20 wynosi ${20 / 2}}",
+        "correct": false
+      },
+      {
+        "text": "2. 'Połowa liczby 20 wynosi ${20 / 2}'",
+        "correct": false
+      },
+      {
+        "text": "3. \"Połowa liczby 20 wynosi ${20 / 2}\"",
+        "correct": false
+      },
+      {
+        "text": "4. `Połowa liczby 20 wynosi ${20 / 2}`",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Oprogramowanie pośredniczące w Express realizuje następujące zadania:",
+    "answers": [
+      {
+        "text": "1. może wywoływać kolejne funkcje oprogramowania pośredniczącego",
+        "correct": false
+      },
+      {
+        "text": "2. może dokonywać zmian w obiektach żądania i odpowiedzi",
+        "correct": false
+      },
+      {
+        "text": "3. może koniec cyklu żądanie-odpowiedz",
+        "correct": false
+      },
+      {
+        "text": "4. przekształca kod JavaScript korzystający z najnowszych możliwości języka na kod, ktozyr będzie wykonywany w starszych przeglądarkach",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaż wynik działania kodu: [2, 3, 4].map(x => x * 2)",
+    "answers": [
+      {
+        "text": "1. [4, 9, 16]",
+        "correct": false
+      },
+      {
+        "text": "2. 24",
+        "correct": false
+      },
+      {
+        "text": "3. 18",
+        "correct": false
+      },
+      {
+        "text": "4. [4, 6, 8]",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "W skład stosu MERN wchodzą następujące technologie:",
+    "answers": [
+      {
+        "text": "1. MySQL, Elixir, Router, Node",
+        "correct": false
+      },
+      {
+        "text": "2. MsSQL, Electron, Ruby on Rails, Node",
+        "correct": false
+      },
+      {
+        "text": "3. Microsoft SQL, Exit, Redux, Node",
+        "correct": false
+      },
+      {
+        "text": "4. MongoDB, Express, React, Node",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Ktozyr sformułowania odnośnie MongoDB są nieprawdziwe?",
+    "answers": [
+      {
+        "text": "1. MongoDB to nierelacyjna baza danych",
+        "correct": false
+      },
+      {
+        "text": "2. językiem MongoDB jest JavaScript",
+        "correct": false
+      },
+      {
+        "text": "3. MongoDB przechowuje dane w dokumentach i kolekcjach",
+        "correct": false
+      },
+      {
+        "text": "4. dokumenty w kolekcji nie posiadają unikalnych identyfikatorów",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaż prawidłowe stwierdzenia dotyczące formatu JSON:",
+    "answers": [
+      {
+        "text": "1. odpowiedź w formacie JSON ma znacznie większą liczbę znaków niż XML i w związku z tym powoduje większy ruch sieciowy i dłuższy czas transferu danych",
+        "correct": false
+      },
+      {
+        "text": "2. lekki, tekstowy, przyjazny format dla języka JavaScript",
+        "correct": false
+      },
+      {
+        "text": "3. obsługuje typy strukturalne object i array",
+        "correct": false
+      },
+      {
+        "text": "4. nie sprawdza się w opisie i serializacji danych strukturalnych",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Ktozyr fragmenty kodu zapisane w JSX są prawidłowe?",
+    "answers": [
+      {
+        "text": "1. return (<div>Pierwszy element</div><div>Drugi element</div>)",
+        "correct": false
+      },
+      {
+        "text": "2. return (<div><div>Pierwszy element</div><div>Drugi element</div></div>)",
+        "correct": false
+      },
+      {
+        "text": "3. return ( <table> <tr><td></td><td></td><td></td></tr> <tr><td></td><td></td><td></td></tr> <tr><td></td><td></td><td></td></tr> </table>)",
+        "correct": false
+      },
+      {
+        "text": "4. return (<button class=\"btn btn-warning\">Naciśnij</button>)",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaż prawidłowe określone dla REST:",
+    "answers": [
+      {
+        "text": "REST jest protokołem",
+        "correct": false
+      },
+      {
+        "text": "API utworzone wg zasad REST nazywane jest RESTful API",
+        "correct": false
+      },
+      {
+        "text": "REST jest standardem",
+        "correct": false
+      },
+      {
+        "text": "REST jest zbiorem dobrych praktyk tworzenia architektury rozproszonych aplikacji",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaż prawdziwe stwierdzenia dotyczące szkieletu Express:",
+    "answers": [
+      {
+        "text": "Express odchodzi od wbudowanych komponentoów na rzecz konfigurowalnej warstwy pośredniczącej",
+        "correct": false
+      },
+      {
+        "text": "Express to szkielet działający po stronie serwera",
+        "correct": false
+      },
+      {
+        "text": "Express w porownaniu do Node upraszcza proces budowania aplikacji internetowej",
+        "correct": false
+      },
+      {
+        "text": "Mocno obciążone witryny oparte na szkielecie Express cechują się niską wydajnością",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "W instrukcji: import React, { Component } from \"react\"",
+    "answers": [
+      {
+        "text": "React jest możliwością nazwaną",
+        "correct": false
+      },
+      {
+        "text": "Component jest domyślną możliwością nazwaną",
+        "correct": false
+      },
+      {
+        "text": "React jest domyślną możliwością nazwaną",
+        "correct": false
+      },
+      {
+        "text": "Component jest możliwością nazwaną",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Czym jest useState w poniższej konstrukcji: const [ state, setState ] = useState()",
+    "answers": [
+      {
+        "text": "konstruktorem",
+        "correct": false
+      },
+      {
+        "text": "stanem",
+        "correct": false
+      },
+      {
+        "text": "propsem",
+        "correct": false
+      },
+      {
+        "text": "hookiem",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaż cechy Virtual DOM:",
+    "answers": [
+      {
+        "text": "bezporednio modyfikuje HTML",
+        "correct": false
+      },
+      {
+        "text": "szybko się aktualizuje",
+        "correct": false
+      },
+      {
+        "text": "tworzy nowy DOM, jeśli zostanie zaktualizowany",
+        "correct": false
+      },
+      {
+        "text": "występuje duże marnotrawstwo pamięci",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaż prawidłowe określone dla REST:",
+    "answers": [
+      {
+        "text": "REST jest protokołem",
+        "correct": false
+      },
+      {
+        "text": "API utworzone wg zasad REST nazywane jest RESTful API",
+        "correct": false
+      },
+      {
+        "text": "REST jest standardem",
+        "correct": false
+      },
+      {
+        "text": "REST jest zbiorem dobrych praktyk tworzenia architektury rozproszonych aplikacji",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaż prawdziwe stwierdzenia dotyczące szkieletu Express:",
+    "answers": [
+      {
+        "text": "Express odchodzi od wbudowanych komponentów na rzecz konfigurowalnej warstwy pośredniczącej",
+        "correct": false
+      },
+      {
+        "text": "Express to szkielet działający po stronie serwera",
+        "correct": false
+      },
+      {
+        "text": "Express w poroównaniu do Node upraszcza proces budowania aplikacji internetowej",
+        "correct": false
+      },
+      {
+        "text": "Mocno obciążone witryny oparte na szkielecie Express cechują się niską wydajnością",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "W instrukcji: import React, { Component } from 'react'",
+    "answers": [
+      {
+        "text": "React jest możliwością nazwaną",
+        "correct": false
+      },
+      {
+        "text": "Component jest domyślną możliwością nazwaną",
+        "correct": false
+      },
+      {
+        "text": "React jest domyślną możliwością nazwaną",
+        "correct": false
+      },
+      {
+        "text": "Component jest możliwością nazwaną",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaż polecenie, które uruchomi kod zawarty w pliku hello.js:",
+    "answers": [
+      {
+        "text": "npm hello.js",
+        "correct": false
+      },
+      {
+        "text": "node hello",
+        "correct": false
+      },
+      {
+        "text": "npm hello",
+        "correct": false
+      },
+      {
+        "text": "npx hello.js",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Czym jest useState w poniższej konstrukcji: const [ state, setState ] = useState()",
+    "answers": [
+      {
+        "text": "konstruktorem",
+        "correct": false
+      },
+      {
+        "text": "stanem",
+        "correct": false
+      },
+      {
+        "text": "propsem",
+        "correct": false
+      },
+      {
+        "text": "hookiem",
+        "correct": false
+      }
+    ]
+  },
+  {
+    "question": "Wskaż cechy Virtual DOM:",
+    "answers": [
+      {
+        "text": "bezpłdowo modyfikuje HTML",
+        "correct": false
+      },
+      {
+        "text": "szybko się aktualizuje",
+        "correct": false
+      },
+      {
+        "text": "tworzy nowy DOM, jeśli zostanie zaktualizowany",
+        "correct": false
+      },
+      {
+        "text": "występuje duże marnotrawstwo pamięci",
+        "correct": false
+      }
+    ]
+  }
+]
