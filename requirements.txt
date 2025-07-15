@@ -1,0 +1,3 @@
+easyocr
+ollama
+PyQt5
